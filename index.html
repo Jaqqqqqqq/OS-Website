@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Website Title -->
+    <header class="header">
+        <h1 class="website-title">OSWEBSITE</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="#" onclick="showPage('home')" class="nav-link">HOME</a></li>
+            <li><a href="#" onclick="showPage('about')" class="nav-link">ABOUT</a></li>
+            
+            <!-- Windows Installation Dropdown -->
+            <li class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle" onclick="toggleDropdown(event, 'windows-menu')">
+                    WINDOWS INSTALLATION
+                    <span class="dropdown-arrow">▼</span>
+                </a>
+                <ul class="dropdown-menu" id="windows-menu">
+                    <li><a href="#" onclick="showPage('win1')">Installation Step 1</a></li>
+                    <li><a href="#" onclick="showPage('win2')">Installation Step 2</a></li>
+                    <li><a href="#" onclick="showPage('win3')">Installation Step 3</a></li>
+                    <li><a href="#" onclick="showPage('win4')">Installation Step 4</a></li>
+                    <li><a href="#" onclick="showPage('win5')">Installation Step 5</a></li>
+                    <li><a href="#" onclick="showPage('win6')">Installation Step 6</a></li>
+                    <li><a href="#" onclick="showPage('win7')">Installation Step 7</a></li>
+                    <li><a href="#" onclick="showPage('win8')">Installation Step 8</a></li>
+                    <li><a href="#" onclick="showPage('win9')">Installation Step 9</a></li>
+                    <li><a href="#" onclick="showPage('win10')">Installation Step 10</a></li>
+                    <li><a href="#" onclick="showPage('win11')">Installation Step 11</a></li>
+                    <li><a href="#" onclick="showPage('win12')">Installation Step 12</a></li>
+                    <li><a href="#" onclick="showPage('win13')">Installation Step 13</a></li>
+                </ul>
+            </li>
+
+            <!-- Laboratory Activities Dropdown -->
+            <li class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle" onclick="toggleDropdown(event, 'lab-menu')">
+                    LABORATORY ACTIVITIES
+                    <span class="dropdown-arrow">▼</span>
+                </a>
+                <ul class="dropdown-menu" id="lab-menu">
+                    <li><a href="#" onclick="showPage('lab1')">Lab Activity 1</a></li>
+                    <li><a href="#" onclick="showPage('lab2')">Lab Activity 2</a></li>
+                    <li><a href="#" onclick="showPage('lab3')">Lab Activity 3</a></li>
+                    <li><a href="#" onclick="showPage('lab4')">Lab Activity 4</a></li>
+                    <li><a href="#" onclick="showPage('lab5')">Lab Activity 5</a></li>
+                    <li><a href="#" onclick="showPage('lab6')">Lab Activity 6</a></li>
+                </ul>
+            </li>
+
+            <!-- Finals Dropdown -->
+            <li class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle" onclick="toggleDropdown(event, 'finals-menu')">
+                    FINALS
+                    <span class="dropdown-arrow">▼</span>
+                </a>
+                <ul class="dropdown-menu" id="finals-menu">
+                    <li><a href="#" onclick="showPage('final1')">Final 1</a></li>
+                    <li><a href="#" onclick="showPage('final2')">Final 2</a></li>
+                    <li><a href="#" onclick="showPage('final3')">Final 3</a></li>
+                    <li><a href="#" onclick="showPage('final4')">Final 4</a></li>
+                    <li><a href="#" onclick="showPage('final5')">Final 5</a></li>
+                    <li><a href="#" onclick="showPage('final6')">Final 6</a></li>
+                    <li><a href="#" onclick="showPage('final7')">Final 7</a></li>
+                    <li><a href="#" onclick="showPage('final8')">Final 8</a></li>
+                    <li><a href="#" onclick="showPage('final9')">Final 9</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Content Area -->
+    <main class="content-area">
+        <div id="page-content" class="page-content">
+            <!-- Content will be loaded here -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 OS Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
