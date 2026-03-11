@@ -153,10 +153,12 @@ body {
     gap: 40px;
     align-items: flex-start;
     margin-bottom: 30px;
+    flex-direction: row;
 }
 
 .about-image {
     flex-shrink: 0;
+    order: 1;
 }
 
 .about-image img {
@@ -170,18 +172,19 @@ body {
 
 .about-text {
     flex: 1;
+    order: 2;
 }
 
 .page-content h1 {
     color: #000000;
     margin-bottom: 20px;
-    font-size: 2.5em;FFB6E8
-    border-bottom: 3px solid #ff006e;
+    font-size: 2.5em;
+    border-bottom: 3px solid #FFB6E8;
     padding-bottom: 15px;
 }
 
-.page-contenFFB6E8
-    color: #ff006e;
+.page-content h2 {
+    color: #FFB6E8;
     margin-top: 30px;
     margin-bottom: 15px;
     font-size: 1.5em;
