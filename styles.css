@@ -16,7 +16,7 @@ body {
     background-color: #000000;
     padding: 30px 0;
     text-align: center;
-    border-bottom: 3px solid #ff006e;
+    border-bottom: 3px solid #FFB6E8;
 }
 
 .website-title {
@@ -27,13 +27,17 @@ body {
     text-transform: uppercase;
 }
 
+.website-highlight {
+    color: #FFB6E8;
+}
+
 /* Navigation Bar */
 .navbar {
     background-color: #000000;
     padding: 0;
     display: flex;
     justify-content: center;
-    border-bottom: 2px solid #ff006e;
+    border-bottom: 2px solid #FFB6E8;
 }
 
 .nav-menu {
@@ -64,8 +68,8 @@ body {
 }
 
 .nav-link:hover {
-    background-color: #ff006e;
-    color: #ffffff;
+    background-color: #FFB6E8;
+    color: #000000;
 }
 
 /* Dropdown Arrow */
@@ -96,7 +100,7 @@ body {
     flex-direction: column;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     z-index: 100;
-    border: 1px solid #ff006e;
+    border: 1px solid #FFB6E8;
 }
 
 .dropdown-menu.show {
@@ -118,8 +122,9 @@ body {
 }
 
 .dropdown-menu li a:hover {
-    background-color: #ff006e;
+    background-color: #FFB6E8;
     padding-left: 25px;
+    color: #000000;
 }
 
 /* Content Area */
@@ -150,12 +155,12 @@ body {
 .page-content h1 {
     color: #000000;
     margin-bottom: 20px;
-    font-size: 2.5em;
+    font-size: 2.5em;FFB6E8
     border-bottom: 3px solid #ff006e;
     padding-bottom: 15px;
 }
 
-.page-content h2 {
+.page-contenFFB6E8
     color: #ff006e;
     margin-top: 30px;
     margin-bottom: 15px;
@@ -177,7 +182,7 @@ body {
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 8px;FFB6E8
     border: 2px solid #ff006e;
 }
 
@@ -192,63 +197,15 @@ body {
 }
 
 /*Video Input Form */
-.video-input-section {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    border: 2px solid #ff006e;
-}
-
-.video-input-section h3 {
-    color: #ff006e;
-    margin-bottom: 15px;
-    font-size: 1.2em;
+.viddisplay: none;
 }
 
 .form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    color: #000000;
-    font-weight: 600;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #cccccc;
-    border-radius: 4px;
-    font-size: 1em;
-    transition: border-color 0.3s ease;
-}
-
-.form-group input:focus {
-    outline: none;
-    border-color: #ff006e;
+    display: none;
 }
 
 .btn {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 12px 30px;
-    border: 2px solid #ff006e;
-    border-radius: 4px;
-    font-size: 1em;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #ff006e;
-    color: #000000;
-}
-
-.btn:active {
+    display: none
     transform: scale(0.98);
 }
 
@@ -307,7 +264,7 @@ body {
     .page-content {
         padding: 20px;
     }
-
+FFB6E8
     .page-content h1 {
         font-size: 1.8em;
     }
@@ -330,3 +287,4 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #cc0052;
 }
+FFB6E8
