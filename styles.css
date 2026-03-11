@@ -76,12 +76,7 @@ body {
 .dropdown-arrow {
     margin-left: 8px;
     font-size: 0.7em;
-    transition: transform 0.3s ease;
     display: inline-block;
-}
-
-.dropdown-toggle.active .dropdown-arrow {
-    transform: rotate(180deg);
 }
 
 /* Dropdown Menu */
@@ -103,7 +98,7 @@ body {
     border: 1px solid #FFB6E8;
 }
 
-.dropdown-menu.show {
+.dropdown:hover .dropdown-menu {
     display: flex;
 }
 
