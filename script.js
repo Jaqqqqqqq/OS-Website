@@ -45,15 +45,15 @@ for (let i = 1; i <= 13; i++) {
             <p>Add your content for Windows Installation Step ${i} here.</p>
             <h2>Instructions</h2>
             <p>Provide detailed step-by-step instructions for this installation step.</p>
-            <div class="video-input-section">
-                <h3>Add a YouTube Video</h3>
-                <div class="form-group">
-                    <label for="win${i}Video">YouTube Video URL (or Video ID):</label>
-                    <input type="text" id="win${i}Video" placeholder="e.g., dQw4w9WgXcQ or https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                </div>
-                <button class="btn" onclick="addVideo('win${i}VideoContainer', 'win${i}Video')">Add Video</button>
-            </div>
-            <div aboratory Activity ${i}`,
+            <div id="win${i}VideoContainer"></div>
+        `
+    };
+}
+
+// Generate page data for Laboratory Activities (6 pages)
+for (let i = 1; i <= 6; i++) {
+    pageData[`lab${i}`] = {
+        title: `Laboratory Activity ${i}`,
         content: `
             <h1>Laboratory Activity ${i}</h1>
             <p>This is a hands-on laboratory activity where you will apply practical skills.</p>
@@ -67,15 +67,15 @@ for (let i = 1; i <= 13; i++) {
             </ul>
             <h2>Procedure</h2>
             <p>Follow the step-by-step procedures outlined in the video below.</p>
-            <div class="video-input-section">
-                <h3>Add a YouTube Video</h3>
-                <div class="form-group">
-                    <label for="lab${i}Video">YouTube Video URL (or Video ID):</label>
-                    <input type="text" id="lab${i}Video" placeholder="e.g., dQw4w9WgXcQ or https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                </div>
-                <button class="btn" onclick="addVideo('lab${i}VideoContainer', 'lab${i}Video')">Add Video</button>
-            </div>
-            <div inal Exam - Topic ${i}`,
+            <div id="lab${i}VideoContainer"></div>
+        `
+    };
+}
+
+// Generate page data for Finals (9 pages)
+for (let i = 1; i <= 9; i++) {
+    pageData[`final${i}`] = {
+        title: `Final Exam - Topic ${i}`,
         content: `
             <h1>Final Exam Preparation - Topic ${i}</h1>
             <p>Review materials for the final examination on this topic.</p>
@@ -87,14 +87,6 @@ for (let i = 1; i <= 13; i++) {
             </ul>
             <h2>Study Guide</h2>
             <p>Watch the video below for a comprehensive review of this topic.</p>
-            <div class="video-input-section">
-                <h3>Add a YouTube Video</h3>
-                <div class="form-group">
-                    <label for="final${i}Video">YouTube Video URL (or Video ID):</label>
-                    <input type="text" id="final${i}Video" placeholder="e.g., dQw4w9WgXcQ or https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                </div>
-                <button class="btn" onclick="addVideo('final${i}VideoContainer', 'final${i}Video')">Add Video</button>
-            </div>
             <div id="final${i}VideoContainer"></div>
         `
     };
@@ -104,6 +96,14 @@ for (let i = 1; i <= 13; i++) {
 function showPage(pageId) {
     const page = pageData[pageId];
     if (page) {
+        document.getElementById('page-content').innerHTML = page.content;
+        // Close all dropdowns when a page is selected
+        closeAllDropdowns();
+        // Scroll to top
+        window.scrollTo(0, 0);
+    }
+}
+
 // Toggle dropdown menu
 function toggleDropdown(event, menuId) {
     event.preventDefault();
