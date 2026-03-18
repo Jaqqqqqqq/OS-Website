@@ -82,14 +82,30 @@
     <!-- Content Area -->
     <main class="content-area">
         <div class="page-content">
-            <h1>Windows Installation - Step 1</h1>
-            <p>This is the first step in the Windows OS installation process.</p>
+            <h1>DHCP Role and Joining Workstations in Domain</h1>
+
             <h2>Instructions</h2>
-            <p>Provide detailed step-by-step instructions for this installation step. Add your content here.</p>
+            <p>Add roles: DHCP Server</p>
+<p>Scopes:</p>
+<p>- number of male students per yr and section is the host requirement with the ip block 10.0.0.0 /8.</p>
+<p>- number of female students per yr and section is the host requirement with the ip block 172.16.0.0/16</p>
+<p>- Server: Last Usable IP add</p>
+<p>- Exclude: First & Last (10 usable IP Addresses)</p>
+<p>- Lease Time: 16 hours</p>
+<p>- Router: Server IP Address</p>
+<p>- DNS: Server IP Address (8.8.8.8)</p>
+
+<p>1. Create client OS, 1 Windows XP (LASTNAME-XP), and 1 Windows 7(LASTNAME-WIN7)</p>
+<p>2. Connect the two (2) client OS to your Windows Server Domain USING DHCP.</p>
+<p>- WINDOW XP IP ADDRESS MUST BELONG TO CLASS B NETWORK</p>
+<p>- WINDOW 7 IP ADDRESS MUST BELONG TO CLASS A NETWORK</p>
+<p>3. LOGIN 5 student accounts per section per OS</p>
             <h2>Video</h2>
-            <p>To add a YouTube video, use an iframe element. Example:</p>
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+                <iframe src="https://www.youtube.com/embed/SNlmWPn-Kcw" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/9MiVDAJvlQw" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
             </div>
         </div>
     </main>
