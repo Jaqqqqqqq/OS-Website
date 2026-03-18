@@ -205,7 +205,7 @@ body {
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
-    border-radius: 8px;FFB6E8
+    border-radius: 8px FFB6E8;
     border: 2px solid #ff006e;
 }
 
@@ -321,4 +321,3 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #cc0052;
 }
-FFB6E8
