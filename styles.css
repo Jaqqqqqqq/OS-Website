@@ -198,9 +198,10 @@ body {
 
 /* YouTube Video Container */
 .video-container {
+    display: block;
     position: relative;
-    width: 560px;
-    height: 315px;
+    width: 640px;
+    height: 360px;
     margin: 30px 0;
     border-radius: 8px;
     border: 2px solid #ff006e;
