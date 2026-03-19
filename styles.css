@@ -199,14 +199,12 @@ body {
 /* YouTube Video Container */
 .video-container {
     position: relative;
-    width: 100%;
-    max-width: 600px;
+    width: 560px;
+    height: 315px;
     margin: 30px 0;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    border-radius: 8px FFB6E8;
+    border-radius: 8px;
     border: 2px solid #ff006e;
+    overflow: hidden;
 }
 
 .video-container iframe {
